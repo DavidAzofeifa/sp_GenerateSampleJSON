@@ -8,7 +8,7 @@ EXEC sp_GenerateSampleJSON '
 {
 	"first name": "John",
 	"last name": "Smith",
-	"age": 25,
+	"birth date": "1990-01-01",
 	"address": {
 		"street address": "21 2nd Street",
 		"city": "New York",
@@ -41,7 +41,7 @@ returns this sample JSON with dummy values (but respecting the data types):
 		"state": "abcdefghijklmnopqrstuvwxyz",
 		"street address": "abcdefghijklmnopqrstuvwxyz"
 	}],
-	"age": 1234567890,
+	"birth date": "2020-01-01T12:34:56.789Z",
 	"first name": "abcdefghijklmnopqrstuvwxyz",
 	"last name": "abcdefghijklmnopqrstuvwxyz",
 	"phone numbers": [{
