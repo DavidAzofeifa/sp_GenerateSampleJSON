@@ -1,7 +1,7 @@
 # sp_GenerateSampleJSON
 This T-SQL stored procedure takes a JSON document and generates a minimal sample that preserves the schema of the original file. The resulting file can be used as a template when developing Azure Data Factory pipelines, to ensure the data types are detected properly by ADF. This can also be used when the original JSON file contains sensitive information that cannot be shared with developers.
 
-For example, executing the stored procedure:
+For example, executing the stored procedure with an inline JSON document:
 
 ```sql
 EXEC sp_GenerateSampleJSON '
@@ -31,7 +31,7 @@ EXEC sp_GenerateSampleJSON '
 '
 ```
 
-Returns this sample JSON:
+returns this sample JSON:
 
 ```json
 [{
