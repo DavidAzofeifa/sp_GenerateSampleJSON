@@ -3,7 +3,7 @@ This T-SQL stored procedure takes a JSON document and generates a minimal sample
 
 For example, executing the stored procedure with an inline JSON document:
 
-```sql
+```TSQL
 EXEC sp_GenerateSampleJSON '
 {
 	"first name": "John",
@@ -33,7 +33,7 @@ EXEC sp_GenerateSampleJSON '
 
 returns this sample JSON with dummy values (but respecting the data types):
 
-```json
+```JSON
 [{
 	"address": [{
 		"city": "abcdefghijklmnopqrstuvwxyz",
