@@ -31,7 +31,7 @@ EXEC sp_GenerateSampleJSON '
 '
 ```
 
-returns this sample JSON:
+returns this sample JSON with dummy values (but respecting the data types):
 
 ```json
 [{
