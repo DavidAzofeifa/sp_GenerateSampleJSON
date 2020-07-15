@@ -3,7 +3,7 @@ This T-SQL stored procedure takes a JSON document and generates a minimal sample
 
 For example, executing the stored procedure:
 
-`
+```sql
 EXEC sp_GenerateSampleJSON '
 {
 	"first name": "John",
@@ -29,11 +29,11 @@ EXEC sp_GenerateSampleJSON '
 	}
 }
 '
-`
+```
 
 Returns this sample JSON:
 
-`
+```json
 [{
 	"address": [{
 		"city": "abcdefghijklmnopqrstuvwxyz",
@@ -52,4 +52,4 @@ Returns this sample JSON:
 		"type": "abcdefghijklmnopqrstuvwxyz"
 	}]
 }]
-`
+```
