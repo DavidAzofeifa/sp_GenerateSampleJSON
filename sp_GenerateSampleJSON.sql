@@ -37,7 +37,7 @@ SELECT DISTINCT
 		END
 INTO #JSON -- The result of this query is stored in a temp table
 FROM CTE WHERE [type] < 4 -- This ensures only the leaves are returned
-ORDER BY [key]
+ORDER BY [key] -- Orders the keys alphabetically
 
 -- Declare variables
 DECLARE @cols NVARCHAR(MAX), @query NVARCHAR(MAX)
