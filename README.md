@@ -53,3 +53,5 @@ returns this sample JSON with dummy values (but respecting the data types):
 	}]
 }]
 ```
+
+The stored procedure currently encloses objects {} within an array [].
